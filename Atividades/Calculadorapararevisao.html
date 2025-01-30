@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24/01/2025 - javascript(js)Guilherme_Henrique_Rodrigues_de_oliveira</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nameofproject">
+            <h1>Calculatrom 3000: </h1>
+        </div>
+        <div class="fistnumber">
+            <label for="n1">1° Número</label>
+            <input type="text" id="n1" placeholder="digite o primeiro n° para a operação">
+        </div>
+        <div class="secondnumber">
+            <label for="n2">2° Número</label>
+            <input type="text" id="n2" placeholder="digite o segundo n° para a operação">
+        </div>
+        <div class="resultadoutput">
+            <label for="resultadoinput:">Resultado:</label>
+            <output type="text" id="resultadoinput">
+        </div>
+        <div? class="result">
+            <h1>Resultado: </h1>
+            <p id="resultado"></p>
+        </div>
+        <script>
+            
+            function sum(){
+                let num1= parseFloat(document.getElementById('n1').value)
+                let num2= parseFloat(document.getElementById('n2').value)
+                let result = num1+num2
+                document.getElementById('resultado').innerHTML=result
+                document.getElementById('resultadoutput').innerHTML=result
+            } 
+            function minus(){
+                let num1= parseFloat(document.getElementById('n1').value)
+                let num2= parseFloat(document.getElementById('n2').value)
+                let result = num1-num2
+                document.getElementById('resultado').innerHTML=result
+                document.getElementById('resultadoutput').innerHTML=result
+            } 
+            function mult(){
+                let num1= parseFloat(document.getElementById('n1').value)
+                let num2= parseFloat(document.getElementById('n2').value)
+                let result = num1*num2
+                document.getElementById('resultado').innerHTML=result
+                document.getElementById('resultadoutput').innerHTML=result
+            } 
+            function divi(){
+                let num1= parseFloat(document.getElementById('n1').value)
+                let num2= parseFloat(document.getElementById('n2').value)
+                let result = num1/num2
+                document.getElementById('resultado').innerHTML=result
+                document.getElementById('resultadoutput').innerHTML=result
+            } 
+        </script>
+        <div class="buttons">
+            
+                <button class="adicao" onclick="sum()">+</button>
+                <button class="subtracao" onclick="minus()">-</button>
+                <button class="multplicacao" onclick="mult()">x</button>
+                <button class="divisao" onclick="divi()">/</button>
+        </div>
+        
+    </div>
+</body>
+</html>

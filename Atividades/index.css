@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+.nameofproject{
+    color:  rgb(0, 153, 255);
+    text-decoration: underline;
+}
+.container {
+    padding: 60px 0px;
+}
+.buttons{
+    justify-content: space-between;
+}
+.buttons button:hover{
+    background-color: rgb(0, 153, 255);
+    color: aliceblue;
+}
+
+
+
+
+
